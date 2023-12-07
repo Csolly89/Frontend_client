@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navbar from './Components/Navbar'
 import Home from './Components/Home'
+import NewPersonForm from './Components/NewPersonForm';
 
 function App() {
 
@@ -10,9 +11,8 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path='/' element={<Home />} /> 
-          {/* <Route exact path='/' element=() /> 
-          <Route exact path='/' element=() />  */}
+          <Route exact path='/' element={<Home />} />
+          <Route path='/new' element={<NewPersonForm />} />  
         </Routes>
       </Router>
     </div>
